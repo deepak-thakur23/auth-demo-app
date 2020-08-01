@@ -1,4 +1,4 @@
-import { AuthHttp, AUTH_PROVIDERS, provideAuth, AuthConfig } from 'angular2-jwt';
+import { AUTH_PROVIDERS } from 'angular2-jwt/angular2-jwt';
 import { OrderService } from './services/order.service';
 import { MockBackend } from '@angular/http/testing';
 import { fakeBackendProvider } from './helpers/fake-backend';
@@ -59,7 +59,7 @@ import { AdminAuthGuard } from './services/admin-auth-guard.service';
     AuthService,
     AuthGuard,
     AdminAuthGuard,
-    // For creating a mock back-end. You don't need these in a real app. 
+    // For creating a mock back-end. You don't need these in a real app.
     fakeBackendProvider,
     MockBackend,
     BaseRequestOptions
