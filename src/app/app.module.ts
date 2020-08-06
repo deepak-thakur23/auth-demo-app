@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, Http, BaseRequestOptions, RequestOptions } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
@@ -18,6 +17,8 @@ import { NoAccessComponent } from './no-access/no-access.component';
 import { AuthGuard } from './services/auth-guard.service';
 import { AdminAuthGuard } from './services/admin-auth-guard.service';
 import { AuthHttp, AuthConfig } from 'angular2-jwt';
+import { HomeComponent } from './home/home.component';
+
 export function authHttpServiceFactory(http: Http, options: RequestOptions) {
   return new AuthHttp(new AuthConfig({}), http, options);
 }
